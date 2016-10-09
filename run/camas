@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+# ________________________________________
+# Author:       mANIApHOBIC
+# Date created: Sat Oct  8 21:06:52 2016
+# Description:  Camas command line application
+
+# ________________________________________
+# Import modules
+
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib')) #DEBUG#
+require('camas')
+
+# ________________________________________
+# Invoke the application
+
+Camas::App.new(ARGV).run
